@@ -1,0 +1,212 @@
+/* Fonts & Roots */
+
+@import url(column.css);
+@import url(navigation2.css);
+
+@font-face {
+    font-family: 'Fs-Me';
+        src: url('/misc/fonts/fs-me/FS Me-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Fs-Me-Light';
+        src: url('/misc/fonts/fs-me/FS Me-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Quercus-Black';
+    src: url('/misc/fonts/quercus-black/quercus-10-black.ttf') format('opentype');
+}
+
+:root {
+    --whiter: #ffffff;
+    --middle: #ECECEC;
+    --blacker: #000000;
+    
+    --greener: #2f5132;
+    --limer: #CAFCA7;
+    --light-greener: #90f49a;
+    
+    --bluer: #2F3952;
+    --light-bluer: #A8CAFD;
+    --sky-bluer: #90B9F5;
+
+    --redder: #522F2F;
+    --light-redder: #FCA7A7;
+    --candy: #F59090;
+
+    --greyer: #292929;
+    --nav-bar: #2E2E2E;
+    --light-greyer: #e9e9e9;
+    --active-slideshow: #717171;
+
+    --nav-bar-2: #12354F;
+    --nav-bar-3: #1D4F75;
+}
+
+body {
+    background-color: #C2BFBF;
+}
+
+.testimonial-body {
+    background-color: var(--whiter) !important;
+}
+
+/* Main */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Fs-Me;
+}
+
+#header {
+    overflow: hidden;
+    background-color: var(--middle);
+}
+
+#about {
+    overflow: hidden;
+    background-color: #C2BFBF;
+    color: #F5FFFE !important;
+    margin-bottom: 40px;
+}
+
+#about > .column-3 > img {
+    position: relative;
+    top: 40px;
+}
+
+#about > .column-3 > p {
+    /* color: #B4F6FF; */
+    color: #000A4E;
+}
+
+.about-bp {
+    font-size: 18px;
+    padding: 14px;
+
+    position: relative;
+    left: 1px;
+    word-wrap: break-word;
+}
+
+/* Header */
+
+.mission-header {
+    position: relative;
+    padding-bottom: 30px;
+    top: 20px;
+}
+
+.mission-statement, .mission-header {
+    position: relative;
+    left: 10px;
+}
+
+h1 {
+    color: var(--greener);
+    font-size: 34px;
+}
+
+
+p {
+    color: var(--bluer);
+    font-size: 20px;
+}
+
+/* About */
+
+.about-header {
+    text-decoration: underline;
+    color: rgb(11, 145, 198);
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.role {
+    position: relative;
+    top: 50px;
+    left: -50px;
+
+    font-family: Fs-Me;
+    font-weight: 300;
+    color:#000000;
+
+    font-family: 32px;
+}
+
+.about-bp {
+    position: relative;
+    top: 30px;
+}
+
+/* Testimonials */
+
+.testimonials-head {
+    overflow: hidden;
+    background-color: var(--whiter);
+    margin-bottom: 40px;
+}
+
+.testimonial-caption {
+    padding: 6px;
+}
+
+.testimonials {
+    overflow: hidden;
+    background-color: #fbffd0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: auto; 
+    grid-gap: 1rem;
+
+    position: relative;
+    top: 20px;
+}
+    
+.card { 
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: .5rem;
+    
+    margin-bottom: 30px;
+    margin-left: 15px;
+    width: calc(100% - 24px);
+}
+
+.card-img {
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    clear: both; 
+    position: relative; 
+    z-index: 1; 
+    height: -3em; 
+    background-color: var(--blacker);
+}
+
+footer > h2 {
+    color: var(--candy);
+    padding: 40px 0;
+    text-align: center;
+
+    font-family: Fs-Me-Light;
+    font-weight: 100;
+}
+
+/* Responsive */

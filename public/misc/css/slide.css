@@ -1,0 +1,43 @@
+
+.txt-first {
+    color: #f2f2f2;
+}
+
+.slideshow-container {
+    max-width: 390px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides > img {
+    vertical-align: middle;
+}
+  
+.numbertext {
+    color: var(--blacker);
+    font-size: 22px;
+
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}

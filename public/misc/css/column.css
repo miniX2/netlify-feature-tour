@@ -1,0 +1,64 @@
+
+/* Clear Row */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Column */
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-2 > p, .column-3 > p {
+    padding: 3px;
+}
+
+.column-2 > h2, .column-3 > h2 {
+    text-align: center;
+}
+
+.column-3 > img, .column-2 > img {
+    position: relative;
+    left: 30px;
+}
+
+/* Testimonial Cards */
+
+.column-4 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    position: relative;
+    top: 25px;
+}
+
+.rw {
+    margin: 0 -5px;
+}
+
+.rw::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column-4 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+/* Left and Right */
